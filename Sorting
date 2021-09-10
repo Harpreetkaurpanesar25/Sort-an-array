@@ -1,0 +1,33 @@
+#Psuedocode
+ #For I = 0 to L
+       #For J = 0 to L-i-1
+         #If (arr(J) > arr(J + 1))
+            #arr[J], arr[J+1] = arr[J+1], arr[J]
+           
+         #End-If
+       #End-For
+     #End-For
+
+#Code-
+
+def bubbleSort(arr):
+    L = len(arr)
+  
+   
+    for i in range(L):
+  
+      
+        for j in range(0, L-i-1):
+  
+            
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+  
+
+arr = [56, 14, 74, 33, 292, 4, 7]
+  
+bubbleSort(arr)
+  
+print ("Sorted array -")
+for i in range(len(arr)):
+    print ("%d" %arr[i]), 
